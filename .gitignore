@@ -4,6 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+*.plan*
 
 # Crash log files
 crash.log
@@ -13,7 +14,7 @@ crash.log
 # version control.
 #
 # example.tfvars
-
+.terraform.lock.hcl
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
@@ -27,3 +28,27 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
